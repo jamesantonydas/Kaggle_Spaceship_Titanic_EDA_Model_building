@@ -1,1 +1,1 @@
-# Kaggle Spaceship Titanic - EDA and Model building
+# Kaggle Spaceship Titanic
