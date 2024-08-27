@@ -45,8 +45,7 @@ def do_prediction():
   model = pickle.load(open('xg_boost.pkl', 'rb'))
   y_predict = model.predict(df.values)
   result = "Transported" if y_predict[0] == 1 else "Not Transported"
-  response = {'result' : result}
-  return render_template('/result.html', response=response)
+  return f"The given person has higher chance of getting {result}"
 
 if __name__ == '__main__':
     app.run(debug=True)
