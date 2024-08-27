@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceship Titanic - Prediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">  
+
+        <h1>Spaceship Titanic - Prediction API</h1>
+        <form action="https://ajames123.pythonanywhere.com/predict" method="POST">
+            <div class="mb-3">
+                <label for="HomePlanet" class="form-label">Home Planet:</label>
+                <select class="form-select" name="HomePlanet" id="HomePlanet">
+                    <option value="0">Earth</option>
+                    <option value="1">Mars</option>
+                    <option value="2">Europa</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="CryoSleep" class="form-label">Cryosleep:</label>
+                <select class="form-select" name="CryoSleep" id="CryoSleep">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Destination" class="form-label">Destination:</label>
+                <select class="form-select" name="Destination" id="Destination">
+                    <option value="0">TRAPPIST-1e</option>
+                    <option value="1">PSO J318.5-22</option>
+                    <option value="2">55 Cancri e</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Age" class="form-label">Age:</label>
+                <input type="number" class="form-control" name="Age" id="Age" value = "28">
+            </div>
+
+            <div class="mb-3">
+                <label for="VIP" class="form-label">VIP:</label>
+                <select class="form-select" name="VIP" id="VIP">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="RoomService" class="form-label">Room Service:</label>
+                <input type="number" class="form-control" name="RoomService" id="RoomService" value = "0">
+            </div>
+
+            <div class="mb-3">
+                <label for="FoodCourt" class="form-label">Food Court:</label>
+                <input type="number" class="form-control" name="FoodCourt" id="FoodCourt" value = "0">
+            </div>
+
+            <div class="mb-3">
+                <label for="ShoppingMall" class="form-label">Shopping Mall:</label>
+                <input type="number" class="form-control" name="ShoppingMall" id="ShoppingMall" value = "0">
+            </div>
+
+            <div class="mb-3">
+                <label for="Spa" class="form-label">Spa:</label>
+                <input type="number" class="form-control" name="Spa" id="Spa" value = "0">
+            </div>
+
+            <div class="mb-3">
+                <label for="VRDeck" class="form-label">VR Deck:</label>
+                <input type="number" class="form-control" name="VRDeck" id="VRDeck" value = "0">
+            </div>
+
+            <div class="mb-3">
+                <label for="deck" class="form-label">Deck:</label>
+                <select class="form-select" name="deck" id="deck">
+                    <option value="0">A</option>
+                    <option value="1">B</option>
+                    <option value="2">C</option>
+                    <option value="3">D</option>
+                    <option value="4">E</option>
+                    <option value="5">F</option>
+                    <option value="6">G</option>
+                    <option value="7">T</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="side" class="form-label">Side:</label>
+                <select class="form-select" name="side" id="side">
+                    <option value="0">P</option>
+                    <option value="1">S</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="prediction-result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
